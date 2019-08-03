@@ -109,4 +109,73 @@ const Country = [
     }
 ]
 
-module.exports = {Country}
+const Location = [
+    {
+        'label': 'India',
+        'value' : 'India',
+        'children' : [{
+            'label': 'Delhi',
+            'value' : 'Delhi',
+            'children' : [{
+                'label': 'New Delhi',
+                'value' : 'New Delhi',
+                'children' : [{
+                    'label': 'Connaught Place',
+                    'value' : 'Connaught Place',
+                },
+                {
+                    'label': 'Sansad Marg',
+                    'value' : 'Sansad Marg',
+                }]
+            }]
+        },
+        {
+            'label': 'Maharashtra',
+            'value' : 'Maharashtra',
+            'children' : [{
+                'label': 'Mumbai',
+                'value' : 'Mumbai',
+                'children' : [{
+                    'label': 'Jogeshwari',
+                    'value' : 'Jogeshwari',
+                },
+                {
+                    'label': 'Borivali',
+                    'value' : 'Borivali',
+                }]
+            }]
+        }]
+    },
+    {
+        'label': 'Brazil',
+        'value' : 'Brazil',
+        'children' : [{
+            'label': 'Minas Gerais',
+            'value' : 'Minas Gerais',
+            'children' : [{
+                'label': 'Divinópolis',
+                'value' : 'Divinópolis',
+                'children' : [{
+                    'label': 'Lisboa',
+                    'value' : 'Lisboa',
+                }]
+            }]
+        },
+        {
+            'label': 'Pernambuco',
+            'value' : 'Pernambuco',
+            'children' : [{
+                'label': 'Arcoverde',
+                'value' : 'Arcoverde',
+                'children' : [{
+                    'label': 'Porto',
+                    'value' : 'Porto',
+                }]
+            }]
+        }]
+    }
+]
+
+const Customer = Country;
+const Resource = Location;
+module.exports = {Country, Location, Customer, Resource};

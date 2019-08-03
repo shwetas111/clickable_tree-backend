@@ -1,4 +1,4 @@
-const {Country} = require('../data');
+const resData = require('../data');
 
 var express = require('express');
 var router = express.Router();
@@ -71,8 +71,7 @@ router.get('/tabs/:item', (req, res) => {
         childItems = [];
         itemList.push(productItem);
     }
-    console.log(Country);
-    res.send(Country);
+    setTimeout(() => res.send(resData[req.params.item]), 2000);
 })
 
 module.exports = router;
